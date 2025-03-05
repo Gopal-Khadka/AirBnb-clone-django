@@ -50,4 +50,8 @@
   - API endpoints
   - Choose betn categoreis on front page
 - Deployment
-  
+
+# Client
+
+# Server
+-  Default package manager used is `uv`. [Official Docs](https://docs.astral.sh/uv/getting-started/installation/) | [Guide](https://www.saaspegasus.com/guides/uv-deep-dive/)
