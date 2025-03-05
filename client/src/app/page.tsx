@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1>Hello</h1>;
+  return (
+    <main>
+      Django BnB
+      <h2 className="text-airbnb">Django Rules</h2>
+    </main>
+  );
 }

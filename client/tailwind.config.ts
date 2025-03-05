@@ -1,18 +1,19 @@
-import type { Config } from "tailwindcss";
-
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite/**/*.js", // <-- add this line
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        airbnb: "#ff385c",
+        "airbnb-dark": "#d50027",
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [
+    require("flowbite/plugin"), // <-- add this line
+  ],
+};
