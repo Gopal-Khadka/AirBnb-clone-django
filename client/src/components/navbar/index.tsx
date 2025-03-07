@@ -1,18 +1,11 @@
 import { Button, HStack, Text } from "@chakra-ui/react";
-import ThemeToggle from "./theme-toggle";
-import { FaAirbnb } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { CgProfile } from "react-icons/cg";
+import Branding from "./Branding";
+import UserMenu from "./UserMenu";
 
 const NavBar = () => {
   return (
     <HStack justifyContent="space-between" m={5}>
-      <HStack>
-        <FaAirbnb size={30} color="red" />
-        <Text fontWeight="bold" color="red" fontSize={24}>
-          airbnb
-        </Text>
-      </HStack>
+      <Branding />
       <HStack>
         <Button variant="ghost" borderRadius="xl">
           Stay
@@ -21,13 +14,7 @@ const NavBar = () => {
           Experiences
         </Button>
       </HStack>
-      <HStack>
-        <Button padding={3} borderRadius={5} variant="ghost">
-          <GiHamburgerMenu />
-          <CgProfile />
-        </Button>
-        <ThemeToggle />
-      </HStack>
+      <UserMenu />
     </HStack>
   );
 };
