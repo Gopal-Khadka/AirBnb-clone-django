@@ -13,6 +13,7 @@ const ThemeToggle = () => {
         variant="outline"
         size="sm"
         rounded="3xl"
+        title="Toggle theme"
       >
         {colorMode === "light" ? <LuSun /> : <LuMoon />}
       </IconButton>
