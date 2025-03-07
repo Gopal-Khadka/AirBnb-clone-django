@@ -29,7 +29,7 @@ const filterData = {
 
 const NavBar = () => {
   return (
-    <Container fluid>
+    <Container fluid my={5}>
       <HStack justifyContent="space-between" m={5}>
         <Branding />
         <HStack>
@@ -55,7 +55,7 @@ const NavBar = () => {
         {Object.keys(filterData.stay).map((key, idx) => {
           return (
             <VStack key={idx} rounded="xl" justifyContent="flex-start">
-              <Text fontWeight="bold" fontSize="xs"> 
+              <Text fontWeight="bold" fontSize="xs">
                 {key}
               </Text>
               <Text fontSize="sm" color="gray.500">
