@@ -1,7 +1,7 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import HouseCard from "./HouseCard";
 import FilterBar from "./FilterBar";
-const nums = [1, 2, 3, 4, 5];
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const index = () => {
   return (

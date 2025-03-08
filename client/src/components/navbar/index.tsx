@@ -46,15 +46,21 @@ const NavBar = () => {
         maxW="3/5"
         rounded="4xl"
         mx="auto"
-        px="5"
-        py="3"
         shadow="md"
         border="1px gray.200 solid"
         justifyContent="space-between"
       >
         {Object.keys(filterData.stay).map((key, idx) => {
           return (
-            <VStack key={idx} rounded="xl" justifyContent="flex-start">
+            <VStack
+              key={idx}
+              rounded="xl"
+              justifyContent="flex-start"
+              _hover={{ bg: "bg.emphasized", rounded: "3xl" }}
+              p="3.5"
+              gapY="0"
+              cursor="pointer"
+            >
               <Text fontWeight="bold" fontSize="xs">
                 {key}
               </Text>
@@ -64,7 +70,7 @@ const NavBar = () => {
             </VStack>
           );
         })}
-        <IconButton rounded="full" colorPalette="red">
+        <IconButton rounded="full" colorPalette="red" mr="2">
           <FaSearch size={20} />
         </IconButton>
       </HStack>
