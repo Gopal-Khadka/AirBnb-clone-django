@@ -7,7 +7,13 @@ const index = () => {
   return (
     <>
       <FilterBar />
-      <SimpleGrid columns={{ md: 3, lg: 4, xl: 5 }} gap={2} my={5} px={5}>
+      <SimpleGrid
+        columns={{ md: 3, lg: 4, xl: 5 }}
+        gapX={2}
+        gapY={5}
+        my={5}
+        px={5}
+      >
         {nums.map((num, idx) => (
           <HouseCard key={idx} />
         ))}
